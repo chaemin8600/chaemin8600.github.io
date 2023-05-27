@@ -3,40 +3,41 @@
 <head>
 
 	<title>요리기록</title>
-<style>
-html,body{margin:0;padding:0; height: 100%; max-width: 1550px;}  
-.section{width:100%;height:68%; background:white;}
-.nav{width:100%; height:8%; clear: both;  background:gray; position: fixed; top: 0; text-align: left;  background-color: rgba( 153, 153, 153, 0.5 );}  
+	<style>
+	html,body{margin:0;padding:0; height: 100%; max-width: 1550px;}  
+.section{width:100%;height:65.5%; background:white; position:absolute; top:10%;}
+.container {background: white;}
+.nav{width:100%; height:10%; clear: both;  background:gray; position: fixed; top: 0; text-align: left;  background-color: rgba( 153, 153, 153, 0.5 );}
 .footer{width:100%;height:3%;clear:both;  background:black; position: fixed; bottom: 0;  background-color: rgba( 153, 153, 153, 0.5 );}
-.aside {width: 10%; height: 100%;  background: white; float: left;}
 
-div.title {position:absolute; top:20%; left:15%; border: none; }
-div.title1 { position:absolute; top:20%; left:40%; border: none; float: left;  }
-div.title2 { position:absolute; top:20%; left:54%; border: none; float: left; }
-div.title3 {position:absolute; top:20%; left:71%; border: none;float: left; }
+h3 {text-align: center;}
+div.title {position:absolute; top:25%; left:15%; border: none; }
+div.title1 { position:absolute; top:25%; left:40%; border: none; float: left;  }
+div.title2 { position:absolute; top:25%; left:60%; border: none; float: left; }
+div.title3 {position:absolute; top:25%; left:80%; border: none;float: left; }
 
-section>div {width: 100%; height: 140%; background:white;}
+section>div {width: 100%; height: 100%; background:white;}
 ul {list-style: none; margin: 0; padding: 0; text-align: center;}
 a {text-decoration: none; color: black; }
-a:hover {box-shadow : 0px 3px 0px black;}
+a:hover {color: white;}
 p { color:black; }
 p:hover {box-shadow :0 0 25px gray; border-radius:20px 0px 20px 0px; }
 /*추천레시피*/
-div>div.box {width: 35%; height: 40%; position:absolute; top:20%; left:15%;}
-div>div.box:hover {box-shadow: 0 0 25px gray; border-radius: 20px 0px 20px 0px}
-/*레시피위에3개*/
-div>div.box2 {width: 8.5%; height: 18%;  position:absolute; top:20%; left:52%;}
+div>div.box {width: 31.2%; height: 61.3%; position:absolute; top:35%; left:15%; background: white; border-radius: 20px 0px 20px 0px;}
+div>div.box:hover {box-shadow: 0 0 25px gray;}
 #round1 { border-radius:20px 0px 20px 0px; }
-div>div.box3 {width: 8.5%; height: 18%; position:absolute; top:20%; left:62.5%;}
-div>div.box4 {width: 8.5%; height: 18%; position:absolute; top:20%; left:73%;}
 
-/*레시피밑에3개*/
-div>div.box5 {width: 8.5%; height: 18%; position:absolute; top:40%; left:52%;}	
-div>div.box6 {width: 8.5%; height: 18%; position:absolute; top:40%; left:62.5%;}
-div>div.box7 {width: 8.5%; height: 18%; position:absolute; top:40%; left:73%;}	
+/*레시피위에2개*/
+div>div.box2 {width: 15%; height: 30%;  position:absolute; top:34%; left:51%; background:#D8D8D8; border-radius: 20px 0px 20px 0px;}
 
-/*실험실 소통방*/
-div.box8 {width: 66.5%; height: 40%; background: #FDF8F8; position:absolute; top:60%; left:15%; padding: 5px; border: black; border-width: 2px; border-style: solid; border-color: black;}	
+div>div.box3 {width: 15%; height: 30%; position:absolute; top:34%; left:70%; background: #D8D8D8; border-radius: 20px 0px 20px 0px;}
+
+
+/*레시피밑에2개*/
+div>div.box4 {width: 15%; height: 30%; position:absolute; top:66%; left:51%; background: #D8D8D8; border-radius: 20px 0px 20px 0px;}
+div>div.box5 {width: 15%; height: 30%; position:absolute; top:66%; left:70%; background: #D8D8D8; border-radius: 20px 0px 20px 0px;} 	
+
+
 </style>
 	
 </head>
@@ -66,30 +67,35 @@ div.box8 {width: 66.5%; height: 40%; background: #FDF8F8; position:absolute; top
 	<section class="section">
 		<div class="container">
 
-		<div class="box"><a href="https://chaemin8600.github.io/r.index.html"><span><h3>오늘의 추천 레시피&nbsp;&lt;김치볶음밥&gt;</h3>
-		<table>
-	
-			<td><img src="https://user-images.githubusercontent.com/126740078/238066369-427b70fb-692a-439a-b90b-1ac3e8117cba.jpg" width="180" height="150" width="180" height="150"></td>
-			<td><b>간단레시피</b>
-				<br>1. 기름을 넉넉히 두르고 김치를 볶는다.<br>2. 스팸이나, 참치캔을 취향에 따라 넣는다.<br>3. 골고루 익으면, 밥을 넣고 볶는다.<br>&nbsp;(간장이나, 굴소스를 살짝 넣고 볶아도 맛있다.)<br>
-				4. 볶는동안, 다른 후라이팬으로 계란을 굽는다.<br>5. 볶음밥을 접시에 담고, 계란을 올린다.</td>
-		</table>
-		<h4 style="color: gray;">1인분 종이컵, 숟가락 기준<br>
-		사용재료 : 김치 1/3컵, 스팸/참치 1통, 쌀밥 1그릇, 굴소스 1숟가락
-
-		</h4>
-			</span>
+		<div class="box"><a href="https://chaemin8600.github.io/r.index.html"><img id="round1" src="https://user-images.githubusercontent.com/126740078/238066369-427b70fb-692a-439a-b90b-1ac3e8117cba.jpg" width="480" height="300"></a>
+		
 	</div>
-		<div class="box2"><a href="https://chaemin8600.github.io/r.index.html"><p><img  id="round1" src="https://user-images.githubusercontent.com/126740078/240369425-24978ad9-c919-4d21-aff2-57bcb47e2371.jpg" alt="사진 주소 변경됨" width="130" height="115"></p></a></div>
-		<div class="box3"><a href="https://chaemin8600.github.io/r.index.html"><p><img  id="round1" src="https://user-images.githubusercontent.com/126740078/240369498-0fc59782-ac96-45b4-bd66-6e0aed84385c.jpg" alt="사진 주소 변경됨" width="130" height="115"></p></a></div>
-		<div class="box4"><a href="https://chaemin8600.github.io/r.index.html"><p><img  id="round1" src="https://user-images.githubusercontent.com/126740078/240370055-800cbaa8-1bc4-40a3-ad94-1f098e18ccfd.jpg" alt="사진 주소 변경됨" width="130" height="115"></p></a></div>
-		<div class="box5"><a href="https://chaemin8600.github.io/r.index.html"><p><img  id="round1" src="https://user-images.githubusercontent.com/126740078/240370109-f6f4e4ba-64d6-4db4-9d5e-874c97142f6c.jpg" alt="사진 주소 변경됨" width="130" height="115"></p></a></div>
-		<div class="box6"><a href="https://chaemin8600.github.io/r.index.html"><p><img  id="round1" src="https://user-images.githubusercontent.com/126740078/240369859-63532425-a3f4-4a94-9bb7-e567c9121c5c.jpg" alt="사진 주소 변경됨" width="130" height="115"></p></a></div>
-		<div class="box7"><a href="https://chaemin8600.github.io/r.index.html"><p><img  id="round1" src="https://user-images.githubusercontent.com/126740078/240370334-57ab032b-5231-4938-a0b8-1bd8ad35f021.jpg" alt="사진 주소 변경됨" width="130" height="115"></p></a></div>
+		<div class="box2"><h3 style="width: 230px; height: 20px;">Korean Dishes</h3>
+			<li style="list-style: none; text-align: center;"><a href="https://chaemin8600.github.io/r.index.html">김치볶음밥</a></li>
+			<li style="list-style: none; text-align: center;"><a href="https://chaemin8600.github.io/r.index.html">김치찜</a></li>
+			<li style="list-style: none; text-align: center;"><a href="https://chaemin8600.github.io/r.index.html">대패숙주볶음</a></li>	
+		</div>
+		
+		<div class="box3"><h3 style="width: 230px; height: 20px;">Pasta</h3><a href="https://chaemin8600.github.io/r.index.html">
+			<li style="list-style: none; text-align: center;"><a href="https://chaemin8600.github.io/r.index.html">알리오올리오파스타</a></li>
+			<li style="list-style: none; text-align: center;"><a href="https://chaemin8600.github.io/r.index.html">명란마요파스타</a></li>	
+		</div>
+		
+		<div class="box4"><h3 style="width: 230px; height: 20px;">Pasta</h3><a href="https://chaemin8600.github.io/r.index.html">
+			<li style="list-style: none; text-align: center;"><a href="https://chaemin8600.github.io/r.index.html">군고구마</a></li>
+			<li style="list-style: none; text-align: center;"><a href="https://chaemin8600.github.io/r.index.html">빼빼로</a></li>	
+			<li style="list-style: none; text-align: center;"><a href="https://chaemin8600.github.io/r.index.html">오레오케이크</a></li>
+		</div>
+			
+		<div class="box5"><h3 style="width: 230px; height: 20px;">Pasta</h3><a href="https://chaemin8600.github.io/r.index.html">
+			<li style="list-style: none; text-align: center;"><a href="https://chaemin8600.github.io/r.index.html">순두부열라면</a></li>
+			<li style="list-style: none; text-align: center;"><a href="https://chaemin8600.github.io/r.index.html">볶음우동</a></li>
+		</div>
+		
 	</div>
 
 </section>      
-	<footer class="footer">&nbsp; source : Lee Chaemin | update 2023-05-26</footer>
+	<footer class="footer">&nbsp; source : Lee Chaemin | update 2023-05-28</footer>
 
 
 
