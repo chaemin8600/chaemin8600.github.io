@@ -23,9 +23,13 @@ div.clowd {position:absolute; top:50%; left:56%; width: 105%; height: 11%;}
 		
 a {text-decoration: none; color: black; }
 a:hover {color: white;}
-p { color:black; }
-p:hover {box-shadow :0 0 25px gray; border-radius:20px 0px 20px 0px; }
 	</style>
+	<script>
+	function change(){
+		var p = document.getElementById("firstP");
+		p.innerHTML="닭발은 <br>시제품을...";
+	}
+</script>
 </head>
 
 <body> 
@@ -71,8 +75,8 @@ p:hover {box-shadow :0 0 25px gray; border-radius:20px 0px 20px 0px; }
 			
 				<img src="https://user-images.githubusercontent.com/126740078/240369974-95781001-2d3a-407e-a093-550f6cff4896.jpg" width="650" height="350"><h4 style="color: gray;">
 				1인분 종이컵, 숟가락 기준<br><td>
-				 1. 부침가루 한컵과 물 2/3컵을 넣고 잘 섞는다.<br>2. 김치를 한컵정도 준비한 후 먹기좋은 사이즈로 자른다.<br>3. 잘 섞어둔 부침가루에 잘라둔 김치를 넣고 잘 섞는다.<br>
-				4. 식용유를 넉넉하게 두른 후 먹기 좋은 사이즈로 굽는다.<br>(불은 중불로 해서 타지 않도록 조심한다.)</td>
+				 1. 닭발을 준비해 둔다.<br>2. 밥을 하고, 그 위에 계란 스크램블을 해서 올린다.<br>3. 그 위에 잘게 썬 단무지와, 후리가케를 넣는다.<br>
+				4. 마요네즈를 두르고, 취향껏 잘게 썬 청양고추를 얹는다.</td>
 			</tr>	
 				</table>
 				
@@ -83,8 +87,9 @@ p:hover {box-shadow :0 0 25px gray; border-radius:20px 0px 20px 0px; }
 	<div class="container4">
 		<img src="https://user-images.githubusercontent.com/126740078/241502373-8abc7cc4-ef66-499e-93f7-7354b36126a1.jpg" alt="사진" width="230" height="200">
 	<div class="clowd">
-		<h4>매운걸 즐긴다면 고춧가루 한숟갈을 넣어도 좋다!
-		</h4>
+		<p id="firstP" onclick="change()">
+			여기를 <br>클릭하세요
+		</p>
 	</div>
 	</div>
 	
