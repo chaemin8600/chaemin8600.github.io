@@ -23,9 +23,14 @@ div.clowd {position:absolute; top:50%; left:56%; width: 105%; height: 11%;}
 		
 a {text-decoration: none; color: black; }
 a:hover {color: white;}
-p { color:black; }
-p:hover {box-shadow :0 0 25px gray; border-radius:20px 0px 20px 0px; }
 	</style>
+	
+<script>
+	function change(){
+		var p = document.getElementById("firstP");
+		p.innerHTML="만들기 은근 까다롭다..!";
+	}
+</script>
 </head>
 
 <body> 
@@ -77,8 +82,9 @@ p:hover {box-shadow :0 0 25px gray; border-radius:20px 0px 20px 0px; }
 	<div class="container4">
 		<img src="https://user-images.githubusercontent.com/126740078/241502373-8abc7cc4-ef66-499e-93f7-7354b36126a1.jpg" alt="사진" width="230" height="200">
 	<div class="clowd">
-		<h4>만들기 은근 까다롭다..!
-		</h4>
+		<p id="firstP" onclick="change()">
+			여기를 <br>클릭하세요
+		</p>
 	</div>
 	</div>
 	
