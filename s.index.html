@@ -198,7 +198,24 @@ div>div.box13 {width: 15%; height: 30%; position:absolute; top:90%; left:70%; ba
 			</div>
 
 		<div class="box7" ><h3 style="width: 230px; height: 20px;">순후추</h3>
-			<div class="w"><img src="https://user-images.githubusercontent.com/126740078/241786023-20369e18-68cb-4e88-b0d1-089578e53d9e.png" width="50px" height="80">
+			<div class="w"><img src="https://user-images.githubusercontent.com/126740078/241786023-20369e18-68cb-4e88-b0d1-089578e53d9e.png" width="50px" height="80" id="img6" 
+	onmouseover="startTimer(5000)"
+	onmouseout="cancelTimer()">
+	<script>
+		var timerID=null;
+		function startTimer(time){
+			timerID = setTimeout("load('https://www.coupang.com/np/search?component=&q=%EC%98%A4%EB%9A%9C%EA%B8%B0+%EC%88%9C%ED%9B%84%EC%B6%94&channel=user')", time);
+
+			document.getElementById("img6").title="5초뒤 쿠팡사이트로 이동합니다.";
+		}
+		function cancelTimer() {
+			if(timerID != null)
+				clearTimeout(timerID);
+		}
+		function load(url) {
+			window.open("https://www.coupang.com/np/search?component=&q=%EC%98%A4%EB%9A%9C%EA%B8%B0+%EC%88%9C%ED%9B%84%EC%B6%94&channel=user");
+		}
+	</script>
 		</div>
 			</div>
 
