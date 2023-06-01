@@ -153,7 +153,24 @@ div>div.box13 {width: 15%; height: 30%; position:absolute; top:90%; left:70%; ba
 			</div>
 
 		<div class="box5" ><h3 style="width: 230px; height: 20px;">청정원 천일염</h3>
-			<div class="w"><img src="https://user-images.githubusercontent.com/126740078/241785138-0608c488-f8be-4235-bf2a-79163cca673d.png" width="50px" height="80">
+			<div class="w"><img src="https://user-images.githubusercontent.com/126740078/241785138-0608c488-f8be-4235-bf2a-79163cca673d.png" width="50px" height="80" id="img4" 
+	onmouseover="startTimer(5000)"
+	onmouseout="cancelTimer()">
+	<script>
+		var timerID=null;
+		function startTimer(time){
+			timerID = setTimeout("load('https://www.coupang.com/np/search?q=%EC%B2%AD%EC%A0%95%EC%9B%90%20%EC%B2%9C%EC%9D%BC%EC%97%BC%20%EA%B0%80%EB%8A%94%EC%86%8C%EA%B8%88&channel=auto')", time);
+
+			document.getElementById("img4").title="5초뒤 쿠팡사이트로 이동합니다.";
+		}
+		function cancelTimer() {
+			if(timerID != null)
+				clearTimeout(timerID);
+		}
+		function load(url) {
+			window.open("https://www.coupang.com/np/search?q=%EC%B2%AD%EC%A0%95%EC%9B%90%20%EC%B2%9C%EC%9D%BC%EC%97%BC%20%EA%B0%80%EB%8A%94%EC%86%8C%EA%B8%88&channel=auto");
+		}
+	</script>
 		</div>
 			</div>
 		
