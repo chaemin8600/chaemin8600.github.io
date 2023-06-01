@@ -109,7 +109,24 @@ div>div.box13 {width: 15%; height: 30%; position:absolute; top:90%; left:70%; ba
 			</div>
 
 		<div class="box3" ><h3 style="width: 230px; height: 20px;">해표 식용유</h3>
-			<div class="w"><img src="https://user-images.githubusercontent.com/126740078/241784240-ed506618-8e0f-49f4-adf8-af7cb157d321.png" width="50px" height="80">
+			<div class="w"><img src="https://user-images.githubusercontent.com/126740078/241784240-ed506618-8e0f-49f4-adf8-af7cb157d321.png" width="50px" height="80" id="img2" 
+			onmouseover="startTimer(5000)"
+			onmouseout="cancelTimer()">
+	<script>
+		var timerID=null;
+		function startTimer(time){
+			timerID = setTimeout("load('https://www.coupang.com/np/search?component=&q=%ED%95%B4%ED%91%9C+%EC%8B%9D%EC%9A%A9%EC%9C%A0&channel=user')", time);
+
+			document.getElementById("img2").title="5초뒤 쿠팡사이트로 이동합니다.";
+		}
+		function cancelTimer() {
+			if(timerID != null)
+				clearTimeout(timerID);
+		}
+		function load(url) {
+			window.open("https://www.coupang.com/np/search?component=&q=%ED%95%B4%ED%91%9C+%EC%8B%9D%EC%9A%A9%EC%9C%A0&channel=user");
+		}
+	</script>
 		</div>
 			</div>
 
